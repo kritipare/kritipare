@@ -57,9 +57,10 @@ export default function SearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar className={classes.header}>
         <Toolbar>
-        <Avatar
-          src="/images/k.jpg" 
-          aria-label="recipe" />
+        {/* <Avatar
+          padding={40}
+          src="/images/k.png" 
+          aria-label="recipe" /> */}
           {/* <Typography
             variant="h6"
             noWrap

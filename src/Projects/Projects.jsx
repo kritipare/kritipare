@@ -18,6 +18,7 @@ const Projects = () => {
               projectId={project.id} 
               projectName={project?.name}
               projectDescription={project?.description}
+              projectDescriptionDetail={project?.descriptionDetail}
               projectImage={project?.image}
               projectStack={project?.stack}
             />

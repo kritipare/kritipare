@@ -2,13 +2,14 @@ import './App.css';
 import Header from './Header/Header';
 import SectionTop from './SectionTop';
 import Projects from './Projects/Projects';
-import Contact from './Contact/Form';
+import Experience from './Experience/Experience';
 import { Container, createTheme, CssBaseline, Grid } from '@material-ui/core';
 import Particles from 'react-particles-js';
 import ContactForm from './Contact/Form';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import About from './About/Aboutme';
+import Skills from './Skills/Skills';
 
 const theme = createTheme({
   typography: {
@@ -43,6 +44,12 @@ function App() {
           </Grid>
           <Grid item xs={12}>
             <Projects />
+          </Grid>
+          <Grid item xs={12}>
+            {/* <Skills /> */}
+          </Grid>
+          <Grid item xs={12}>
+            <Experience />
           </Grid>
           <Grid item xs={12}>
             <ContactForm />

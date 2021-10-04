@@ -5,7 +5,7 @@ import useStyles from './styles';
 import DialogCustom from './DialogCustom';
 import { ButtonBack } from '../GlobalComponents';
 
-const ProjectCard = ({ project, projectId, projectName, projectDescription, projectImage, projectStack }) => {
+const ProjectCard = ({ project, projectId, projectName, projectDescription,projectDescriptionDetail, projectImage, projectStack }) => {
   const classes = useStyles();
 
   const [open, setOpen] = useState(false);
@@ -29,23 +29,29 @@ const ProjectCard = ({ project, projectId, projectName, projectDescription, proj
             {/* <MoreVertIcon /> */}
           </IconButton>
         }
+        titleTypographyProps={{variant:'h5' }}
         title={projectName}
         // subheader="subheader or date"
       />
-      <CardMedia
+      {/* <CardMedia
         component="img"
         height="200"
         width="200"
         image={projectImage}
         alt={projectName}
-      />
+      /> */}
       <CardContent>
-        <Typography variant="body2">
+        <p>
+          {projectDescriptionDetail?.map((para) => {
+            return <p>● {para}</p>
+          })}
+        </p>
+        {/* <Typography variant="body2">
           {projectDescription}
-        </Typography>
-        <Typography variant="caption">
+        </Typography> */}
+        {/* <Typography variant="caption">
           {projectStack}
-        </Typography>
+        </Typography> */}
       </CardContent>
       <CardActions>
         <ButtonBack alt aria-label="seeMore" onClick={() => setOpen(true)}>
