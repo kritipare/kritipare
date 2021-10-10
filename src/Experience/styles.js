@@ -19,7 +19,7 @@ export default makeStyles((theme) =>({
   button: {
     display: "block", 
     appearance: "none", 
-    marginTop: "40px", 
+    // marginTop: "40px", 
     border: "1px solid #333", 
     marginBottom: "20px", 
     textTransform: "uppercase", 

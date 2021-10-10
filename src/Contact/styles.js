@@ -19,21 +19,14 @@ export default makeStyles((theme) =>({
   button: {
     display: "block", 
     appearance: "none", 
-    marginTop: "40px", 
-    border: "1px solid #333", 
-    marginBottom: "20px", 
     textTransform: "uppercase", 
-    padding: "10px 20px", 
     borderRadius: "4px",
     background: "#ec5990", 
     color: "white", 
-    textTransform: "uppercase", 
-    border: "none", 
-    marginTop: "40px", 
-    padding: "20px", 
+    padding: "10px", 
     fontSize: "16px", 
     fontWeight: "100", 
-    letterSpacing: "10px",
+    letterSpacing: "5px",
     "&:hover":{
       background: '#bf1650'
     }
@@ -41,14 +34,15 @@ export default makeStyles((theme) =>({
   input: {
     display: "block", 
     boxSizing: "border-box", 
-    width: "100%", 
+    width: "80%", 
+    margin: "0 10%",
     borderRadius: "4px", 
-    border: "1px solid white", 
+    border: "1px solid grey", 
     padding: "10px 15px", 
     marginBottom: "10px", 
     fontSize: "18px",
     [theme.breakpoints.up('sm')]:{
-      width: '120%'
+      // width: '120%'
     }
   },
   error: {
