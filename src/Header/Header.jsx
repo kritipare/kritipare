@@ -5,7 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 import SearchIcon from '@material-ui/icons/Search';
 import { styled } from '@material-ui/styles';
-import { alpha, AppBar, Avatar, Box, IconButton, InputBase, Toolbar, Typography } from '@material-ui/core';
+import { alpha, AppBar, Avatar, Box, IconButton, InputBase, Link, Toolbar, Typography } from '@material-ui/core';
 import useStyles from './styles';
 import NavigationTabs from '../Navigation/NavigationTabs';
 
@@ -70,6 +70,12 @@ export default function SearchAppBar() {
             This is the header
           </Typography> */}
           <NavigationTabs />
+          <Link href={process.env.REACT_APP_LINK_TO_CODE}> 
+            <img 
+            src="/images/github.png"
+            alt="code"
+            />
+          </Link>
           {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
