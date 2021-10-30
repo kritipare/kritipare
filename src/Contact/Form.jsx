@@ -40,7 +40,7 @@ const Projects = () => {
       <Card className={classes.card}>
         <form onSubmit={handleSubmit(onSubmit)} className={classes.form} autoComplete="off">
           {/* register your input into the hook by invoking the "register" function */}
-          <input placeholder="Name" autoFocus defaultValue="" {...register("name")} className={classes.input} />
+          <input placeholder="Name"  defaultValue="" {...register("name")} className={classes.input} />
           
           {/* include validation with required or other standard HTML validation rules */}
           <input placeholder="Email" defaultValue="" {...register("email", { required: true })} className={classes.input} />

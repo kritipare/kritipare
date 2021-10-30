@@ -21,7 +21,7 @@ const SectionTop = () => {
     setTimeout(() => {
       setLoading(false);
     }, 1000);
-  }, [])
+  }, []);
 
   return (
     <Grid container justifyContent="center" alignItems="center" id="Home" style={{ top: '100px', position: 'relative' }}>
@@ -33,7 +33,7 @@ const SectionTop = () => {
           component="div"
           sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
         >
-          Hey There! 
+          Hey! 
           </Typography>
           <span className="blog-title-emoji">👋</span>
         </div>
