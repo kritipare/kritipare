@@ -1,6 +1,6 @@
 ## Getting started
 
-You can view a live demo over at https://kriti-pare.netlify.app/
+You can view a live demo over at https://kriti-pare.onrender.com/
 
 To get the frontend running locally:
 
