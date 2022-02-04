@@ -70,12 +70,15 @@ export default function SearchAppBar() {
             This is the header
           </Typography> */}
           <NavigationTabs />
-          <Link href={process.env.REACT_APP_LINK_TO_CODE}> 
-            <img 
-            src="/images/github.png"
-            alt="code"
-            />
+          <Link href={process.env.REACT_APP_LINK_TO_CODE} className='p-1'> 
+            <i class="fa fa-github fa-2x m-2" aria-hidden="true"></i>
           </Link>
+
+          <Link href={process.env.REACT_APP_LINKEDIN_URL} className='p-1'> 
+            <i class="fa fa-linkedin fa-2x m-2" aria-hidden="true"></i>
+          </Link>
+          
+
           {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
